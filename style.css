@@ -1,0 +1,125 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E RESETS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f7f4; /* Fundo cinza esverdeado bem claro */
+}
+
+/* ==========================================================================
+   2. CABEÇALHO (HEADER) E NAVEGAÇÃO
+   ========================================================================== */
+header {
+    background-color: #1e4620; /* Verde escuro (remete à floresta/agro) */
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #a3e2a7; /* Verde claro para o subtítulo */
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Garante que os links quebrem de linha no celular */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2d6a31; /* Efeito ao passar o mouse */
+}
+
+/* ==========================================================================
+   3. CONTEÚDO PRINCIPAL (MAIN) E SEÇÕES
+   ========================================================================== */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #4caf50; /* Detalhe em verde na lateral */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+section h2 {
+    color: #1e4620;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1.05rem;
+    color: #555555;
+}
+
+/* Linhas divisórias (usadas no HTML) */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 1rem 0;
+}
+
+/* ==========================================================================
+   4. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #2b2b2b; /* Grafite escuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+/* ==========================================================================
+   5. RESPONSIVIDADE (DESIGN PARA CELULAR)
+   ========================================================================== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Links ficam um embaixo do outro no celular */
+        gap: 10px;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
